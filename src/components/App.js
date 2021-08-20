@@ -5,9 +5,9 @@ import AddamountForm from './amountForm'
 function App() {
 
   return (
-    <AmountContext.Provider  >
+    // <AmountContext.Provider  >
       <AddamountForm />   
-    </AmountContext.Provider>
+    //</AmountContext.Provider>
   );
 }
 

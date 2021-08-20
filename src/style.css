@@ -1,0 +1,110 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 24px;
+}
+
+body {
+  background-color: #c5e4e7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400, 500, 700;
+}
+
+button {
+  cursor: pointer;
+  background-color: #00494d;
+  margin: 2%;
+}
+
+h1 {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+p {
+  font-size: small;
+  padding: 0;
+  font-weight: bold;
+}
+
+form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.B-wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+.M-wrapper {
+  background-color: white;
+  border-radius: 3%;
+  margin: 5% 10% 10% 10%;
+}
+
+.inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.G-input {
+  border-radius: 3%;
+  margin: 6%;
+  padding: 6%;
+}
+
+.input {
+  width: 100%;
+  border: 0ch;
+  background-color: #f4fafa;
+  padding: 3%;
+}
+
+.btn {
+  border: 0ch;
+  border-radius: 13%;
+  color: white;
+  padding: 3%;
+}
+
+.btn-custom {
+  background-color: #f4fafa;
+  text-align: center;
+  font-size: large;
+}
+
+.output {
+  background-color: #00494d;
+  color: white;
+  border-radius: 3%;
+  margin: 6%;
+  padding: 4%;
+}
+
+.amount {
+  color: #26c0ab;
+  text-align: end;
+  font-size: xx-large;
+}
+
+.button-reset {
+  display: -ms-grid;
+  display: grid;
+}
+
+.button-reset_fill {
+  background-color: #26c0ab;
+  border: 0ch;
+  margin: 6%;
+  padding: 4%;
+}
+/*# sourceMappingURL=style.css.map */

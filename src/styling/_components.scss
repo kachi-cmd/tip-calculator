@@ -1,19 +1,109 @@
 * {box-sizing: border-box;}
 
 html {
-    font-size: $Font-size-form-inputs;
+    font-size: 24px;
 }
 
 body {
-    color: $Strong-cyan ;
+   background-color:  hsl(185, 41%, 84%);
     font-family: Arial, Helvetica, sans-serif ;
-    font-weight: $Weights ;
+    font-weight:  400, 500, 700 ;
 }
 
 button {
     cursor: pointer;
+    background-color: hsl(183, 100%, 15%);
+    margin: 2%;
+    
+
+}
+h1{
+    display: grid;
+    text-align: center;
+}
+p{
+    font-size: small;
+    padding: 0;
+    font-weight: bold;
+}
+// h6{
+//     margin: 1;
+//     padding: 0%;
+// }
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
 }
 
 .B-wrapper {
     display: grid;
+    
+}
+.M-wrapper {
+    background-color:  white;
+    border-radius: 3%;
+    margin: 5% 10% 10% 10%;
+}
+
+.inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+// INPUT ...
+.G-input{
+    border-radius: 3%;
+    margin: 6%;
+    padding: 6%;
+}
+.input{
+    //display: grid;
+    width: 100%;
+    border: 0ch;
+    background-color: hsl(189, 41%, 97%) ;
+    padding:3% ;
+}
+.btn{
+    border: 0ch;
+    border-radius: 13%;
+    color: white;
+    padding:3% ;
+}
+.btn-custom{
+    background-color: hsl(189, 41%, 97%);
+    text-align: center;
+    font-size: large;
+    //margin: 2%;
+    // width: 79px;
+    // height: 30px;
+     //padding: 0%;
+}
+// .btn-group{
+//     display: grid;
+// }
+
+// OUTPUT ...
+.output{
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 3%;
+    margin: 6%;
+    padding: 4%;
+}
+.amount{
+    color: hsl(172, 67%, 45%);
+    text-align: end;
+    font-size: xx-large;
+}
+.button-reset{
+    display: grid;
+}
+.button-reset_fill{
+    background-color: hsl(172, 67%, 45%);
+    border: 0ch;
+    margin: 6%;
+    padding: 4%;
+   // border-radius: 3%;
 }
