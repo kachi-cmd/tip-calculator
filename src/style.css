@@ -41,6 +41,8 @@ form {
 .B-wrapper {
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: (minmax(180px, 1fr))[auto-fit];
+      grid-template-rows: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .M-wrapper {
@@ -80,6 +82,7 @@ form {
   background-color: #f4fafa;
   text-align: center;
   font-size: large;
+  border: 0ch;
 }
 
 .output {
