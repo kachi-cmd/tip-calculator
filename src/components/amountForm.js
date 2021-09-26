@@ -4,33 +4,24 @@ import {useState, useEffect} from 'react'
 const AddamountForm = ()=>{
   
     const [amount, setAmount]= useState(0)
-    const [custom, setCustom]= useState(0)
+    const [total, setTotal]= useState(0)
     const [user, setUser]= useState(0)
+    const [tip, setTip] = useState(0)
+    const [tipAmount, setTipAmount] = useState(0)
 
     const perFunc = (e)=>{
         if (e) {
             e.preventDefault() 
-            console.log(e.target.value)
         }
       // to devide amount 
-      setAmount(amount*e.target.value) 
-    }
-
-// to set the custom arithmetic
-    if (!!custom && custom > 0) {
-        setAmount(amount/(custom/100)) 
-        setCustom(custom = false) 
+      setTip(e.target.value)
     }
 
 // to multiply amount by the number of users in other to get the total sum
     useEffect(()=>{
-        if (!!user && user > 1) {
-            setAmount(amount*user)
-            setUser(user = false)
-        }
-    },[user, amount])
-
-console.log(amount)
+       setTipAmount( tip*amount)
+       setTotal(tipAmount*user)
+    },[user, amount, tip])
 
 // to reset all the values back to zero. i.e clean slate    
     const resetFunc = ()=>setAmount(0)
@@ -62,7 +53,7 @@ const style_custom = {width: 75, height: 28}
                                 <input  className='btn-custom' placeholder='Custom' 
                                  style={style_custom}
                                 // value = {custom}
-                                onChange = {(e)=> setCustom(e.target.value)}
+                                onChange = {(e)=>setTip(e.target.value/100)}
                                 />
                             </div>    
 
@@ -77,11 +68,11 @@ const style_custom = {width: 75, height: 28}
 
                             <div className='inner'> 
                                 <p>Tip Amount <br /> <h6>/person </h6>  </p>
-                                <div className='amount'> ${amount} </div>
+                                <div className='amount'> ${tipAmount} </div>
                             </div>
                             <div className='inner'>
                                 <p>Total <br /> <h6>/person </h6> </p>
-                                <div className='amount'> ${0} </div>
+                                <div className='amount'> ${total} </div>
                             </div>
                             <div className='button-reset' >
                             <button className='button-reset_fill' onClick={resetFunc} > RESET </button>  
