@@ -32,7 +32,7 @@ const style_custom = {width: 75, height: 28}
     return(
         <div>
             <div className= 'B-wrapper'>
-                    <h1>SPLITTER</h1>
+                    <h1>TIP CALCULATOR</h1>
 
                 <div className= 'M-wrapper'>       
                         
