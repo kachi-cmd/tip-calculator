@@ -55,7 +55,7 @@ const style_custom = {width: 75, height: 28}
                                 // value = {custom}
                                 onChange = {(e)=>setTip(e.target.value/100)}
                                 />
-                            </div>    
+                            </div>
 
                             <p> Number of people </p>
                                 <input className= 'input'  placeholder='people' 
@@ -67,11 +67,11 @@ const style_custom = {width: 75, height: 28}
                         <div className='output'> 
 
                             <div className='inner'> 
-                                <p>Tip Amount <br /> <h6>/person </h6>  </p>
+                                <div>Tip Amount <br /> <h6>/person </h6>  </div>
                                 <div className='amount'> ${tipAmount} </div>
                             </div>
                             <div className='inner'>
-                                <p>Total <br /> <h6>/person </h6> </p>
+                                <div>Total <br /> <h6>/person </h6> </div>
                                 <div className='amount'> ${total} </div>
                             </div>
                             <div className='button-reset' >
